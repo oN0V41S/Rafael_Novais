@@ -6,7 +6,7 @@ function Content(){
         <section className='content'>
           <div className='biography'>
             <h1 className='title-biography'>Bem Vindo,</h1>
-            <p className='content-biography'>Meu nome é Rafael Novais tenho 16 anos, Atualmente sou Desenvolvedor Front-End, concluindo curso de Introdução a Desenvolvimento Web, tenho interesse em futuramente ser um Desenvolvedor Full-Stack.</p>
+            <p className='content-biography'>Meu nome é Rafael Novais tenho 16 anos, Atualmente sou Desenvolvedor Front-End, com um curso de Desenvolvimento Web, e atualmente estou fazendo tecnólogo em Desenvolvimento de Sistemas.</p>
           </div>
           <div className='menu'>
             <Link className='link-menu' to='/Projects'>Projetos</Link>
