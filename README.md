@@ -1,5 +1,4 @@
-# Rafael Novais Portfolio
-### Meu Portfolio profissional com experiências e conhecimentos.
-### My professional portfolio with experiences and knowledge.
+# Olá Meu nome é Rafael
+### Esse é Portfolio profissional que conta um pouco mais sobre mim e minhas habilidades.
 
 <https://portfolio-rafaelnovais.netlify.app>
