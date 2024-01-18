@@ -7,17 +7,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: 500px;
-  margin: 1vh;
   background-color: #000030;
+  display: grid;
+  grid-template-columns: 20% auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
-@media(max-width: 720px){
-  body{
-    margin: 0.5vh;
-  }
-}

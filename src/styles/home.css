@@ -8,7 +8,9 @@
 
 /* texto no título */
 .title-text {
-    width: 50%;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 /* navegação na página */
@@ -22,7 +24,7 @@
     text-decoration: none; 
 }
 
-@media(max-width: 820px){
+@media(max-width: 1024px){
     .title{
         display: flex;
         flex-direction: column;

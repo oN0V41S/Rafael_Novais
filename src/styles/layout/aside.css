@@ -1,0 +1,46 @@
+/* Header */
+.aside {
+  background-color: #000096;
+  border-right: 3px solid #0000ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+.aside-icons {
+  display: flex;
+  width: max-content;
+  gap: 20%;
+  margin: 2vh auto;
+}
+
+.aside-icon{
+  width: 38px;
+}
+
+.nav{
+  margin: 0.75vh;
+  border-radius: 10px;
+  background-color: #0000ff;
+}
+
+.nav-link {
+  display: flex;
+  padding: 2vh 2vh;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link h1{
+  font-size: medium;
+  margin: 1vh 0;
+  margin-left: 2vh;
+}
+
+.nav-img {
+  width: 16px;
+  height: 16px;
+  margin: auto 0;
+}
