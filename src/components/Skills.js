@@ -4,7 +4,7 @@ import img1 from '../static/nav/icons8-github-384.png'
 
 export default function Skills() {
     return (
-        <section>
+        <section id='Skills'>
             <h3 className='skill-text'>Essas são algumas habilidades e Tecnologias que tenho conhecimento atualmente. </h3>
             <div className='skills'>
                 <Skill Skill="Linguagens de Marcação"/>

@@ -5,7 +5,7 @@ import DevWizard from '../static/projects/devwizards.png'
 
 export default function Projects() {
     return (
-        <section>
+        <section id='Projects'>
             <h3 className='project-text'>Veja a Seguir alguns projetos que estou desenvolvendo ou já desenvolvi.</h3>
             <div className='projects'>
                 <ItemProject name="DevWizards" tech="ReactJS, TailwindCSS, Figma, Trello" desc="Projeto Desenvolvido em uma Squad em Sala de Aula com foco em práticar todo conteúdo estudado no semestre" img={DevWizard} />

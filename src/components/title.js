@@ -13,9 +13,9 @@ export default function Title() {
 function Nav() {
   return (
     <nav className='nav'>
-      <Link className='nav-link' to='/Projects'>Projetos</Link>
-      <Link className='nav-link' to='/Skills'>Habilidades e Tecnologias</Link>
-      <Link className='nav-link' to='/Skills'>Contato</Link>
+      <a className='nav-link' href='#Projects'>Projetos</a>
+      <a className='nav-link' href='#Skills'>Habilidades e Tecnologias</a>
+      <a className='nav-link' href='#'>Contato</a>
     </nav>
   )
 }
