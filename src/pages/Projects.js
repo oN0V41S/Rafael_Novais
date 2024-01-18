@@ -1,7 +1,8 @@
 import '@/styles/projects.css'
-import tools from '@/static/tools.png'
 import DevWizard from '@/static/projects/devwizards.png'
 import Aside from '../components/layout/navigation'
+
+import { ItemProject, EmptyItemProject } from '../components/ItemProject';
 
 export default function Projects() {
     return (
@@ -20,24 +21,3 @@ export default function Projects() {
     )
 }
 
-function ItemProject({ img, desc, tech, name }) {
-    return (
-        <div className='project'>
-            <img src={img} alt='' className='project-img' />
-            <div className='project-aux'>{name}</div>
-            <div className='project-info'>
-                <h4 >{desc}</h4>
-                <h5>Algumas tecnologias utilizadas: {tech}</h5>
-            </div>
-        </div>
-    );
-}
-
-function EmptyItemProject() {
-    return (
-        <div className='project'>
-            <img src={tools} alt='' className='project-empty' />
-            <div className='project-name'>Em breve</div>
-        </div>
-    );
-}

@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import '@/styles/layout/aside.css'
-import imgNav1 from '@/static/aside/github.png'
-import imgNav2 from '@/static/aside/linkedin.png'
+
 import iconHome from '@/static/aside/home.png'
 
 

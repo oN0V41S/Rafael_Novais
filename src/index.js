@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import Home from '@/router/Home';
-import Projects from '@/router/Projects'
-import Skills from '@/router/Skills'
+import './index.css';
+import Home from '@/pages/Home';
+import Projects from '@/pages/Projects'
+import Skills from '@/pages/Skills'
 
 import {
   createBrowserRouter,

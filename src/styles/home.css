@@ -1,38 +1,16 @@
 /* título */
-.title{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    margin: 28vh auto;
+.about{
+    margin: 2vh 3vh;
+    padding: 40vh 8vh;
+    background-color: rgba(0, 0, 0,0.3);
+    border-radius: 15px;
 }
 
-/* texto no título */
-.title-text {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-/* navegação na página */
-.title .nav{
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
-}
-
-.title .nav-link{
-    text-decoration: none; 
-}
-
-@media(max-width: 1024px){
-    .title{
-        display: flex;
-        flex-direction: column;
-        margin: 8vh auto;
-        gap: 5vh;
-    }
-
-    .title-text{
-        width: 100%;
-    }
+.about-h1{
+    font-size: 64px;
+    font-weight: 800;
+}.about-p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
 }
