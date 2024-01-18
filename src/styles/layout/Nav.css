@@ -25,9 +25,10 @@
   width: 38px;
 }
 
-@media(max-width: 820px){
+@media(max-width: 1024px){
   .navigation {
-    margin: 0 auto;
+    margin: 2vh auto;
     padding: 1vh 7vh;
+    width: 80%;
   }
 }

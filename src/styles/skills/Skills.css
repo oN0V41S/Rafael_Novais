@@ -29,3 +29,16 @@
 .skill img {
   width: 128px;
 }
+
+@media(max-width: 1024px){
+  .skills{
+    width: 65%;
+    grid-template-columns: 1fr;
+    gap: 4vh;
+    margin: auto;
+  }
+
+  .skill{
+    margin: auto;
+  }
+}
