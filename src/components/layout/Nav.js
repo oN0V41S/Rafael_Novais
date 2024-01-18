@@ -1,19 +1,23 @@
-import './Nav.css'
+import '../../styles/layout/Nav.css'
 import imgNav1 from '../../static/nav/icons8-github-384.png'
 import imgNav2 from '../../static/nav/icons8-linkedin-240.png'
-import { Link } from 'react-router-dom';
 
-
-function Nav(){
-    return(
-        <nav className='navigation'>
-          <Link className='link-nav' to='/'>Novais</Link>
-          <div className='nav-midia'>
-            <a href='https://github.com/oN0V41S'> <img alt='' className='img-nav' width='width:28px' src={imgNav1}/> </a>
-            <a href='https://www.linkedin.com/in/rafael-novais-8bb770236/'> <img alt='' className='img-nav' width='width:28px' src={imgNav2}/> </a>
-          </div>
-        </nav>
-    );
+export default function Nav() {
+  return (
+    <header className='navigation'>
+      <h3 className='link-text'>Rafael Novais</h3>
+      <div className='nav-link'>
+        <NavIcon link="https://github.com/oN0V41S" img={imgNav1} />
+        <NavIcon link="https://www.linkedin.com/in/rafael-novais-8bb770236/" img={imgNav2} />
+      </div>
+    </header>
+  );
 }
 
-export default Nav;
+function NavIcon({ img, link }) {
+  return (
+    <a href={link} className='img-nav'>
+      <img alt='' src={img} width={"100%"} />
+    </a>
+  )
+}

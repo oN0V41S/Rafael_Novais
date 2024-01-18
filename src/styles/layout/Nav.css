@@ -1,0 +1,33 @@
+/* Header */
+.navigation {
+  align-items: center;
+  background-color: #000096;
+  border-radius: 15px;
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+  padding: 3vh 15vh;
+  width: 70%;
+  margin: 2vh auto;
+}
+
+.link-text{
+  color: white;
+  font-size: x-large;
+}
+
+.nav-link {
+  display: flex;
+  width: max-content;
+}
+
+.img-nav{
+  width: 38px;
+}
+
+@media(max-width: 820px){
+  .navigation {
+    margin: 0 auto;
+    padding: 1vh 7vh;
+  }
+}
