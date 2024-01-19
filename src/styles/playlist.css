@@ -12,3 +12,9 @@
     color: white;
     text-decoration: none;
 }
+
+@media(max-width: 1024px){
+    .playlist{
+        grid-template-columns: 1fr;
+    }
+}
