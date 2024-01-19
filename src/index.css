@@ -12,4 +12,9 @@ body {
   grid-template-columns: 20% auto;
 }
 
+@media(max-width: 1024px){
+  body{
+    grid-template-columns: 30% auto;
+  }
+}
 
