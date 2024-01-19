@@ -6,7 +6,6 @@ export default function Playlist(){
         <section className="playlist">
             <ItemPlaylist src='' href='/skills' name='Tecnologias e Ferramentas' desc='Algumas das tecnologias e ferramentas que possuo conhecimento ou estou estudando.'/>
             <ItemPlaylist src='' href='/projects' name='Projetos' desc='Alguns dos Projetos que desenvolvi ou participei.'/>
-
         </section>
     )
 }

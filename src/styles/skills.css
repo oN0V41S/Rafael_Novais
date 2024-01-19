@@ -1,27 +1,46 @@
 .skill-text{
   width: 45%;
-  margin:  5vh auto;
-}
-
-#Skills{
-  margin-top: 25vh;
+  margin: 2vh auto;
 }
 .skills {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: auto; */
+  gap: 3vh;
   justify-content: space-around;
-  padding: 7vh 10vh;
-  background-color: #000096;
   border-radius: 15px;
   width: 80%;
-  margin: auto;
+  margin-bottom: 2vh;
+  margin: 2vh auto
 }
 
-.skill {
+.skill{
+  background-color: #000096;
+  padding: 2vh 4vh;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.skill:hover .skill-desc{
+  transition: 1s initial;
+  display: block;
+  opacity: 1;
+  animation: SkillDesc 1s infinite;
+}
+
+.skill-title {
   display: flex;
   color: white;
   justify-items: center;
   width: max-content;
+}
+
+.skill-desc{
+  display: none;
+  opacity: 0;
+  margin: 3vh 2vh;
 }
 
 .skill h2{
@@ -44,4 +63,9 @@
   .skill{
     margin: auto;
   }
+}
+
+@keyframes SkillDesc {
+  0%{display: none; opacity: 0;}
+  100%{display: block; opacity: 1;}
 }
