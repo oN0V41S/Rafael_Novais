@@ -1,71 +1,79 @@
-.skill-text{
+.skill-text {
   width: 45%;
   margin: 2vh auto;
 }
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto; */
+  display: grid;
   gap: 3vh;
   justify-content: space-around;
   border-radius: 15px;
   width: 80%;
   margin-bottom: 2vh;
-  margin: 2vh auto
+  margin: 2vh auto;
 }
 
-.skill{
+.skill {
   background-color: #000096;
   padding: 2vh 4vh;
   border-radius: 10px;
-  width: 40%;
+  display: grid;
+  gap: 10px;
 }
 
-.skill:hover .skill-desc{
-  transition: 1s initial;
+.skill:hover .skill-desc {
   display: block;
-  opacity: 1;
-  animation: SkillDesc 1s infinite;
+  opacity: 0;
+  animation: SkillDesc 1s both;
 }
 
 .skill-title {
   display: flex;
+  gap: 10px;
   color: white;
   justify-items: center;
   width: max-content;
 }
 
-.skill-desc{
-  display: none;
+.skill-desc {
+  display: block;
   opacity: 0;
-  margin: 3vh 2vh;
+  margin-top: 0.5vh;
 }
 
-.skill h2{
+.skill h2 {
   height: max-content;
   margin: auto;
 }
 
-.skill img {
-  width: 128px;
+.skill-bar {
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 5px;
+}
+.skill:hover .skill-bar {
+  transition: 1s ease-in-out;
+  width: 100%;
 }
 
-@media(max-width: 1024px){
-  .skills{
+@keyframes SkillDesc {
+  from {
+    display: block;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills {
     width: 65%;
     grid-template-columns: 1fr;
     gap: 4vh;
     margin: auto;
   }
 
-  .skill{
+  .skill {
     margin: auto;
   }
-}
-
-@keyframes SkillDesc {
-  0%{display: none; opacity: 0;}
-  100%{display: block; opacity: 1;}
 }

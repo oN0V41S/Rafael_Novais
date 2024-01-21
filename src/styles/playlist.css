@@ -1,20 +1,32 @@
-.playlist{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.playlist {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .playlist-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 400px;
-    margin: 2vh;
-    padding: 2vh;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 400px;
+  margin: 2vh;
+  padding: 2vh;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
 }
-
-@media(max-width: 1024px){
-    .playlist{
-        grid-template-columns: 1fr;
-    }
+.playlist-bar {
+  width: 0%;
+  background-color: white;
+  border-radius: 5px;
+  height: 5px;
+}
+.playlist-item:hover .playlist-bar {
+  transition: 1s ease-in-out;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .playlist {
+    grid-template-columns: 1fr;
+  }
 }

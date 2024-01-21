@@ -1,16 +1,20 @@
 /* título */
-.about{
-    margin: 2vh 3vh;
-    padding: 40vh 8vh;
-    background-color: rgba(0, 0, 0,0.3);
-    border-radius: 15px;
+.about {
+  margin: 2vh 3vh;
+  padding: 30vh 6vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
 }
-
-.about-h1{
-    font-size: 64px;
-    font-weight: 800;
-}.about-p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1;
+.about-h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+.about h2,
+p {
+  padding: 1vh 4vh;
+}
+.about-p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
 }
