@@ -8,15 +8,14 @@ body {
   color: white;
   font-weight: 500px;
   background-color: #000030;
-  display: grid;
-  grid-template-columns: 20% auto;
+  display: flex;
   position: relative;
 }body:nth-child(2){
   margin-left: 20%;
+  position: absolute;
 }
 
 main{
-  position: absolute;
   margin: 2vh auto;
   padding: 30vh 6vh;
   background-color: rgba(0, 0, 0, 0.3);
@@ -27,7 +26,14 @@ main{
 
 @media(max-width: 1024px){
   body{
-    grid-template-columns: 30% auto;
+    display: grid;
+    margin: 0;
+    padding: 0;
+  }body:nth-child(2){
+    margin-left: 0;
+  }
+  main{
+    position: relative;
   }
 }
 
