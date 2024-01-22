@@ -1,23 +1,12 @@
-import tools from "@/static/tools.png";
-
-export function ItemProject({ img, desc, tech, name }) {
+export default function ItemProject({ img, desc, tech, name }) {
   return (
     <div className="project">
       <img src={img} alt="" className="project-img" />
-      <div className="project-aux">{name}</div>
       <div className="project-info">
-        <h4>{desc}</h4>
-        <h5>Algumas tecnologias utilizadas: {tech}</h5>
+        <h1>{name}</h1>
+        <h2>{desc}</h2>
+        <h2>Algumas tecnologias utilizadas: {tech}</h2>
       </div>
-    </div>
-  );
-}
-
-export function EmptyItemProject() {
-  return (
-    <div className="project">
-      <img src={tools} alt="" className="project-empty" />
-      <div className="project-name">Em breve</div>
     </div>
   );
 }

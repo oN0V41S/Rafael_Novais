@@ -6,9 +6,8 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 80px;
   padding: 7vh 10vh;
-  background-color: #000096;
   border-radius: 15px;
   width: 80%;
   margin: auto;
@@ -16,29 +15,41 @@
 }
 
 .project {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 255, 0.15);
+  font-size: medium;
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 4vh 3vh;
+  font-weight: 800;
+  height: max-content;
+}.project:hover{
+  transition: 800ms;
+  box-shadow: 2px 2px 10px 3px rgba(51, 51, 51, 0.5);
 }
+
 .project-info {
   width: 90%;
   margin: 2vh auto;
   display: grid;
   gap: 10px;
-  text-align: justify;
 }
 
 .project-img {
-  margin: auto;
+  margin: 1vh auto;
   width: 90%;
+  max-height: 40%;
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
 }
 
-.project-aux {
-  font-weight: 800;
-  margin: auto;
+.project-info h1{
+  font-size: x-large;
+  font-weight: bolder;
   width: max-content;
+}.project-info h2{
+  font-size: medium;
 }
 
 .project-empty {

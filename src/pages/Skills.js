@@ -1,17 +1,17 @@
 import React from "react";
 import Aside from "@/components/layout/navigation";
 import "@/styles/skills.css";
-import Skill from "@/components/skill";
+import Skill from "@/components/ItemSkill";
 
 export default function Skills() {
   return (
-    <>
+    <main>
       <Aside />
       <section>
-        <h3 className="skill-text">
-          Essas são algumas habilidades e Tecnologias que tenho conhecimento
-          atualmente.{" "}
-        </h3>
+        <div className="skill-text">
+          Habilidades
+          <h1>Essas são algumas habilidades e Tecnologias que tenho conhecimento ou estou estudando no momento.</h1>
+        </div>
         <div className="skills">
           <Skill
             Skill="Linguagens de Marcação"
@@ -35,6 +35,6 @@ export default function Skills() {
           />
         </div>
       </section>
-    </>
+    </main>
   );
 }

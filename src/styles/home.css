@@ -1,15 +1,9 @@
 /* título */
-.about {
-  margin: 2vh 3vh;
-  padding: 30vh 6vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
-}
 .about-h1 {
   font-size: 64px;
   font-weight: 800;
 }
-.about h2,
+.about h2 , .about
 p {
   padding: 1vh 4vh;
 }
