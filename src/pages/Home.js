@@ -1,5 +1,4 @@
-import '@/styles/home.css';
-import Aside from '@/components/layout/navigation'
+import Aside from '@/components/layout/aside'
 import ItemPlaylist from '../components/ItemPlaylists';
 
 export default function Home() {

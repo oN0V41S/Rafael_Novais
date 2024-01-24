@@ -1,6 +1,5 @@
 import React from "react";
-import Aside from "@/components/layout/navigation";
-import "@/styles/skills.css";
+import Aside from "@/components/layout/aside";
 import Skill from "@/components/ItemSkill";
 
 export default function Skills() {

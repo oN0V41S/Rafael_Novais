@@ -1,8 +1,7 @@
-import '@/styles/projects.css'
 import DevWizard from '@/static/projects/devwizards.png'
-import Aside from '@/components/layout/navigation'
+import Aside from '@/components/layout/aside'
 import ItemProject from '@/components/ItemProject'
-import tools from '@/static/tools.png'
+import tools from '@/static/projects/tools.png'
 
 export default function Projects() {
     return (
