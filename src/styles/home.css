@@ -1,14 +1,44 @@
+.about{
+  margin-top: 2vh;
+}
+
 /* título */
-.about-h1 {
-  font-size: 64px;
+.about h1{
   font-weight: 800;
+  width: max-content;
 }
-.about h2 , .about
-p {
-  padding: 1vh 4vh;
-}
-.about-p {
+.about p{
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
+}
+
+.about h2,
+.about p {
+  padding: 1vh 1vh;
+}
+
+.about-me{
+  display: none;  
+}
+
+@media (max-width: 1040px) {
+  .about-name {
+    display: none;
+  }
+  .about-me{
+    display: block;
+  }
+  .about h1{
+    font-size: small;
+  }
+  .about h2{
+    font-size: smaller;
+    padding: 1vh 1vh;
+
+  }
+  .about p {
+    font-size: x-small;
+    padding: 1vh 1vh;
+  }
 }

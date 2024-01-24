@@ -53,10 +53,6 @@
 /* Responsividade para dispositivos com tela menor que tablets */
 @media (max-width: 1024px) {
   .aside {
-    position: relative;
-    height: 10%;
-  }
-  .nav {
-    position: relative;
+    display: none;
   }
 }

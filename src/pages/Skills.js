@@ -8,8 +8,8 @@ export default function Skills() {
       <Aside />
       <section>
         <div className="skill-text">
-          Habilidades
-          <h1>Essas são algumas habilidades e Tecnologias que tenho conhecimento ou estou estudando no momento.</h1>
+          <h1>Habilidades</h1>
+          <p>Essas são algumas habilidades e Tecnologias que tenho conhecimento ou estou estudando no momento.</p>
         </div>
         <div className="skills">
           <Skill

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import '@/styles/style.css'
 import Home from '@/pages/Home';
 import Projects from '@/pages/Projects'

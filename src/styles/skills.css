@@ -3,6 +3,9 @@
   font-size: xx-large;
   width: 70%;
   margin: 2vh auto 10vh;
+  display: grid;
+  gap: 20px;
+  line-height: 1.5;
 }.skill-text h1{
   font-size: large;
 }
@@ -10,11 +13,11 @@
 /* Conteiner de Habilidades */
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3vh;
+  grid-template-columns: 48% 48%;
+  gap: 2%;
   justify-content: space-around;
   border-radius: 15px;
-  width: 90%;
+  width: 100%;
   margin: 2vh auto;
 }
 
@@ -40,13 +43,21 @@
 
 @media (max-width: 1024px) {
   .skills {
-    width: 65%;
-    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-columns: 100%;
     gap: 4vh;
-    margin: auto;
+    margin: 8vh 0 0 0;
+    padding: 0;
   }
 
   .skill {
     margin: auto;
   }
+  .skill-text{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .skill-text p{
+    font-size: x-small;
+  } 
 }
