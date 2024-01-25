@@ -6,12 +6,12 @@ export default function Skills() {
   return (
     <main>
       <Aside />
-      <section>
-        <div className="skill-text">
+      <section className="Skills">
+        <div className="skills-title">
           <h1>Habilidades</h1>
           <p>Essas são algumas habilidades e Tecnologias que tenho conhecimento ou estou estudando no momento.</p>
         </div>
-        <div className="skills">
+        <div className="skill-list">
           <Skill
             Skill="Linguagens de Marcação"
             capacidades="Conhecimento em Linguagens de Marcação HTML5, CSS3, e Markdown, desenvolvidos academicamente."
