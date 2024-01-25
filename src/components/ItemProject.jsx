@@ -1,6 +1,6 @@
 export default function ItemProject({ img, desc, tech, name }) {
   return (
-    <div className="project">
+    <div className="project-item">
       <img src={img} alt="" className="project-img" />
       <div className="project-info">
         <h1>{name}</h1>

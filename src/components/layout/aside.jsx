@@ -1,6 +1,6 @@
-import Navigation from "@/components/layout/navigation";
-import TopSkill from "@/components/layout/topSkill";
-import About from "@/components/layout/about";
+import Navigation from "@/components/layout/aside/navigation";
+import TopSkill from "@/components/layout/aside/topSkill";
+import About from "@/components/layout/aside/about";
 
 export default function Aside() {
     return (
