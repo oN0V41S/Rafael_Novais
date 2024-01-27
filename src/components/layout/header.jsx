@@ -5,8 +5,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import About from "@/components/layout/components/about";
-import Navigation from "@/components/layout/components/navigation"
-import TopSKill from "@/components/layout/components/topSkill"
+import Navigation from "@/components/layout/components/navigation";
+import TopSKill from "@/components/layout/components/topSkill";
 
 // Recursos de acessibilidade do Modal
 Modal.setAppElement("#root");
@@ -30,28 +30,32 @@ export default function Header() {
         <h3>RafaelNovais</h3>
       </Link>
 
-      <button onClick={openModal}>Modal</button>
+      <button onClick={openModal} className="modal-btn">
+        <span /> <span /> <span />
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Modal De Exemplo"
         style={{
-            overlay: {
-              backgroundColor: 'rgba(0, 0, 0, 0.6)'
-            },
-            content: {
-              border: '1px solid black',
-              background: 'rgba(0, 0 ,0, 1)',
-              borderRadius: '10px',
-              padding: '20px'
-            }
-          }}
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+          },
+          content: {
+            border: "1px solid black",
+            background: "rgba(0, 0 ,0, 1)",
+            borderRadius: "10px",
+            padding: "20px",
+          },
+        }}
       >
-        <button onClick={closeModal} className="modal-btn-close"><strong>X</strong></button>
+        <button onClick={closeModal} className="modal-btn-close">
+          <span/> <span/>
+        </button>
         <div>
-          <Navigation/>
-          <TopSKill/>
-          <About/>
+          <Navigation />
+          <TopSKill />
+          <About />
         </div>
       </Modal>
     </header>

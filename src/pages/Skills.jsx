@@ -8,10 +8,10 @@ export default function Skills() {
         <section className="Skills">
           <div className="skills-title">
             <h1>Habilidades</h1>
-            <h4>
+            <p>
               Essas são algumas habilidades e Tecnologias que tenho conhecimento
               ou estou estudando no momento.
-            </h4>
+            </p>
           </div>
           <div className="skill-list">
             <Skill

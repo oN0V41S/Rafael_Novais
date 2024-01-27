@@ -11,10 +11,10 @@ export default function Projects() {
         <section className="project">
           <div className="project-title">
             <h1>Projetos</h1>
-            <h4>
+            <p>
               Veja a Seguir alguns projetos que estou desenvolvendo ou já
               desenvolvi.
-            </h4>
+            </p>
           </div>
           <div className="project-list">
             <ItemProject

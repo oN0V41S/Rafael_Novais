@@ -50,6 +50,10 @@
   width: 28px;
 }
 
+.contact-list li{
+  font-size: smaller;
+}
+
 /* Responsividade para dispositivos com tela menor que tablets */
 @media (max-width: 1024px) {
   .aside {

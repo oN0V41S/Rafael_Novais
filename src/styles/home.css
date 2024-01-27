@@ -1,5 +1,6 @@
 .about{
   margin-top: 2vh;
+  width: 85%;
 }
 
 /* título */
@@ -23,6 +24,9 @@
 }
 
 @media (max-width: 1040px) {
+  .about{
+    margin: 2vh auto 8vh;
+  }
   .about-name {
     display: none;
   }
