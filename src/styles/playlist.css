@@ -65,8 +65,6 @@
 
 /* Media query para Telas menores que Tablet */
 @media (max-width: 1024px) {
-  .playlist{
-  }
   .playlist h2{
     margin: 0 auto;
     font-size: small;

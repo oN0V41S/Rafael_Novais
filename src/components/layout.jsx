@@ -1,10 +1,10 @@
-import Aside from "./layout/aside";
+import LayoutAside from "./layout/aside";
 import Header from "./layout/header";
 
 export default function Layout({ children }) {
   return (
     <>
-      <Aside />
+      <LayoutAside />
       <Header />
       <main>{children}</main>
     </>

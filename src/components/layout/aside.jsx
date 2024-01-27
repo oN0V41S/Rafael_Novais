@@ -1,8 +1,8 @@
-import Navigation from "@/components/layout/aside/navigation";
-import TopSkill from "@/components/layout/aside/topSkill";
-import About from "@/components/layout/aside/about";
+import Navigation from "@/components/layout/components/navigation";
+import TopSkill from "@/components/layout/components/topSkill";
+import About from "@/components/layout/components/about";
 
-export default function Aside() {
+export default function LayoutAside() {
     return (
       <aside className='aside'>
         <Navigation/>

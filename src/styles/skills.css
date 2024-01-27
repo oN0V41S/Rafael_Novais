@@ -50,8 +50,11 @@
 
 @media (max-width: 1024px) {
   .skill-title{
-    gap: 0;
-  }
+    display: grid;
+    gap: 15px;
+    width: 80%;
+    font-size: medium;
+    margin: 2vh auto 8vh;  }
   .skill-list {
     width: 100%;
     grid-template-columns: 100%;
