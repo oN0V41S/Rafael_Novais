@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node
 WORKDIR /usr/rafaaelnovais-port
 RUN npm install
 COPY . .
