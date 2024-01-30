@@ -1,12 +1,12 @@
 /* Importando estilos Página Home */
-@import url("@/styles/home.css");
-@import url("@/styles/playlist.css");
+@import url("@/styles/home.scss");
+@import url("@/styles/playlist.scss");
 
 /* Importando estilos Página Habilidades */
-@import url("@/styles/skills.css");
+@import url("@/styles/skills.scss");
 
 /* Importando estilos página projetos */
-@import url("@/styles/projects.css");
+@import url("@/styles/project.scss");
 
 /* Importando estilos de layout da página */
 @import url("@/styles/layout/aside.css");

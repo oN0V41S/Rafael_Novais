@@ -1,7 +1,7 @@
-import "@/styles/playlist.css";
 import { Link } from "react-router-dom";
 
 export default function ItemPlaylist({ src, name, desc, href }) {
+
   return (
     <Link to={href} className="playlist-item">
         <span className="playlist-bar" />

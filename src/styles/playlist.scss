@@ -1,0 +1,112 @@
+.playlist {
+  margin-top: 10vh;
+
+  /* Media query para Telas menores que Tablet */
+  @media (max-width: 1024px) {
+    margin-top: 5vh;
+  }
+
+  h2 {
+    width: max-content;
+
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+      font-size: small;
+    }
+  }
+
+  /* conteiner com as playlists */
+  .playlist-list {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    width: 100%;
+    gap: 2%;
+    height: auto;
+  }
+
+  .playlist-list {
+    /* Media query para Telas menores que Tablet */
+    @media (max-width: 1024px) {
+      grid-template-columns: 100%;
+      justify-content: center;
+    }
+  }
+
+  /* Estilo do item */
+  .playlist-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 2vh auto;
+    padding: 4vh 3vh;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    height: auto;
+
+    /* Media query para Telas menores que Tablet */
+    @media (max-width: 1024px) {
+      padding: 2vh;
+    }
+  }
+  /* Estilo barra de progresso  */
+  .playlist-bar {
+    width: 0%;
+    background-color: white;
+    border-radius: 5px;
+    height: 5px;
+    margin: 0 auto 2vh;
+
+    /* Media query para Telas menores que Tablet */
+    @media (max-width: 1024px) {
+      height: 2px;
+    }
+  }
+
+  /* Animação barra de progresso */
+  .playlist-item:hover .playlist-bar {
+    transition: 1s ease-in-out;
+    width: 90%;
+  }
+
+  .playlist-title {
+    display: flex;
+    height: auto;
+    width: 100%;
+    gap: 2.5%;
+  }
+
+  .playlist-title img {
+    width: 48px;
+    height: 48px;
+
+    /* Media query para Telas menores que Tablet */
+    @media (max-width: 1024px) {
+      width: 19px;
+      height: 19px;
+    }
+  }
+  .playlist-title h3 {
+    height: max-content;
+    margin-top: auto;
+
+    /* Media query para Telas menores que Tablet */
+    @media (max-width: 1024px) {
+      font-size: small;
+      width: 100%;
+    }
+  }
+  .playlist-item h5 {
+    width: 100%;
+    margin-top: 2vh;
+
+    /* Media query para Telas menores que Tablet */
+    @media (max-width: 1024px) {
+      font-size: xx-small;
+      width: 100%;
+    }
+  }
+}
+
+
