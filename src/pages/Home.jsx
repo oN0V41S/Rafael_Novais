@@ -1,6 +1,9 @@
 import ItemPlaylist from "@/components/ItemPlaylists";
 import Layout from "@/components/layout";
 
+import toolsIcon from "@/static/UI/tools.png"
+import projectIcon from "@/static/UI/project.png"
+
 export default function Home() {
   return (
     <>
@@ -21,13 +24,13 @@ export default function Home() {
           <h2>Veja meus projetos e habilidades a baixo </h2>
           <div className="playlist-list">
             <ItemPlaylist
-              src=""
+              src={toolsIcon}
               href="/skills"
               name="Tecnologias e Ferramentas"
               desc="Algumas das tecnologias e ferramentas que possuo conhecimento ou estou estudando."
             />
             <ItemPlaylist
-              src=""
+              src={projectIcon}
               href="/projects"
               name="Projetos"
               desc="Alguns dos Projetos que desenvolvi ou participei."

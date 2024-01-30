@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom'
-import home from '@/static/aside/nav/home.png'
-import tools from '@/static/aside/nav/tools.png'
-import projects from '@/static/aside/nav/project.png'
+import home from '@/static/UI/home.png'
+import tools from '@/static/UI/tools.png'
+import projects from '@/static/UI/project.png'
 
 export default function Navigation() {
   return (
-        <ul id='Navigation' className='aside-list aside-component'>
+    <div className=' nav aside-component'>
+        <ul className='aside-list'>
           <li> <NavLink name="Home" href='/' src={home} /> </li>
           <li> <NavLink name="Habilidades" href='/skills' src={tools} /> </li>
           <li> <NavLink name="Projetos" href='/projects' src={projects}/> </li>
         </ul>
+    </div>
   )
 }
 

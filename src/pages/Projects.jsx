@@ -24,7 +24,7 @@ export default function Projects() {
               desc="Projeto Desenvolvido em uma Squad em Sala de Aula com foco em práticar todo conteúdo estudado no semestre"
             />
             <ItemProject
-              img={tools}
+              img=""
               name="Em breve"
               tech="Em breve"
               desc="Em breve"

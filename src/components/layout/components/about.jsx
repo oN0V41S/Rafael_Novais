@@ -1,22 +1,39 @@
+import githubIcon from "@/static/UI/github.png";
+import linkedinIcon from "@/static/UI/linkedin.png";
+import emailIcon from "@/static/UI/email.png";
+
 export default function About() {
   return (
     <div className="contact aside-component">
       <h3>Contato</h3>
       <ul className="contact-list aside-list">
         <li>
-          <AboutImg src="" name="Linkedin" href="https://www.linkedin.com/in/rafaelnovais042/" />
+          <AboutLink
+            src={linkedinIcon}
+            name="Linkedin"
+            href="https://www.linkedin.com/in/rafaelnovais042/"
+          />
         </li>
         <li>
-          <AboutImg src="" name="Github" href=""/>
+          <AboutLink
+            src={githubIcon}
+            name="Github"
+            href="https://github.com/ON0V41S/"
+          />
         </li>
-        <li>rafaelaugustonnovais@gmail.com</li>
-        <li>(+55)11 9 98317761</li>
+        <li>
+          <AboutLink
+            src={emailIcon}
+            name="Email"
+            href="mailto:rafaelaugustonnovais@gmail.com"
+          />
+        </li>
       </ul>
     </div>
   );
 }
 
-function AboutImg({ src, name, href }) {
+function AboutLink({ src, name, href }) {
   return (
     <a className="about-img aside-item" href={href}>
       <img className="aside-img" src={src} alt="aboutImg" />
