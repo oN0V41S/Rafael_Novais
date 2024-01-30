@@ -1,5 +1,5 @@
-import LayoutAside from "./layout/aside";
-import Header from "./layout/header";
+import LayoutAside from "@/components/layout/aside/aside";
+import Header from "@/components/layout/header/header";
 
 export default function Layout({ children }) {
   return (

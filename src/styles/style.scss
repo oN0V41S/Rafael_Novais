@@ -2,15 +2,15 @@
 @import url("@/styles/index.scss");
 
 /* Importando estilos Página Home */
-@import url("@/styles/home.scss");
-@import url("@/styles/playlist.scss");
+@import url("@/components/about/about.scss");
+@import url("@/components/playlist/playlist.scss");
 
 /* Importando estilos Página Habilidades */
-@import url("@/styles/skills.scss");
+@import url("@/components/skill/skills.scss");
 
 /* Importando estilos página projetos */
-@import url("@/styles/project.scss");
+@import url("@/components/project/project.scss");
 
 /* Importando estilos de layout da página */
-@import url("@/styles/layout/aside.scss");
-@import url("@/styles/layout/header.scss");
+@import url("@/components/layout/aside/aside.scss");
+@import url("@/components/layout/header/header.scss");

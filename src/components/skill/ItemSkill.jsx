@@ -1,4 +1,4 @@
-export default function Skill({ Skill, src, capacidades }) {
+export default function ItemSkill({ Skill, src, capacidades }) {
   return (
     <div className="skill">
       <div>

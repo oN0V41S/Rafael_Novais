@@ -1,8 +1,8 @@
-import githubIcon from "@/static/UI/github.png";
-import linkedinIcon from "@/static/UI/linkedin.png";
-import emailIcon from "@/static/UI/email.png";
+import githubIcon from "@/static/icons/github.png";
+import linkedinIcon from "@/static/icons/linkedin.png";
+import emailIcon from "@/static/icons/email.png";
 
-export default function About() {
+export default function Contact() {
   return (
     <div className="contact aside-component">
       <h3>Contato</h3>

@@ -4,9 +4,9 @@ import React from "react";
 // Importando components
 import { Link } from "react-router-dom";
 import Modal from "react-modal";
-import About from "@/components/layout/components/about";
-import Navigation from "@/components/layout/components/navigation";
-import TopSKill from "@/components/layout/components/topSkill";
+import Contact from "@/components/layout/aside/contact";
+import Navigation from "@/components/layout/aside/navigation";
+import TopSKill from "@/components/layout/aside/topSkill";
 
 // Recursos de acessibilidade do Modal
 Modal.setAppElement("#root");
@@ -55,7 +55,7 @@ export default function Header() {
         <div>
           <Navigation />
           <TopSKill />
-          <About />
+          <Contact />
         </div>
       </Modal>
     </header>

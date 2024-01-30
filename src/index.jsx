@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import '@/styles/style.scss'
 import Home from '@/pages/Home';
 import Projects from '@/pages/Projects'
-import Skills from '@/pages/Skills'
+import Tools from '@/pages/tools'
 
 import {
   createBrowserRouter,
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/skills",
-    element: <Skills/>
+    element: <Tools/>
   },
 ]);
 
