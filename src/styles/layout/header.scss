@@ -1,0 +1,110 @@
+/* Estilo do conteiner do Header  */
+.header {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  margin: 4vh auto;
+  padding: 2vh 4vh;
+
+  @media (max-width: 1024px) {
+    /* Estilo do conteiner Header  */
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  /* Estilo do Titulo principal  */
+  h3,
+  a {
+    color: white;
+    text-decoration: none;
+    width: max-content;
+    height: max-content;
+    margin: auto 0;
+  }
+}
+
+/* Estilo do Botão para abrir o Modal  */
+.modal-btn {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: max-content;
+  width: 30px;
+  background: none;
+  border: 0px;
+
+  span {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+  }
+
+  &:hover span {
+    transition: 500ms;
+    background-color: rgba(200, 200, 200, 0.9);
+  }
+
+  &:nth-child(1) {
+    top: 5px;
+  }
+  &:nth-child(2) {
+    top: 10px;
+  }
+  &:nth-child(3) {
+    top: 15px;
+  }
+}
+
+/* Estilo do Botão para fechar o Modal  */
+.modal-btn-close {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: max-content;
+  width: 30px;
+  background: none;
+  border: 0px;
+
+  span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 20px;
+    &:hover span {
+      transition: 500ms;
+      background-color: rgba(200, 200, 200, 0.9);
+    }
+  }
+  &:nth-child(1) {
+    transform: rotate(-50deg);
+  }
+  &:nth-child(2) {
+    transform: rotate(50deg);
+  }
+}
+
+.nav-link {
+  h4 {
+    @media (max-width: 1024px) {
+      font-size: small;
+    }
+  }
+
+  img {
+    @media (max-width: 1024px) {
+      width: 16px;
+    }
+  }
+}
+
+.topskill h3 {
+  @media (max-width: 1024px) {
+    font-size: small;
+  }
+}
