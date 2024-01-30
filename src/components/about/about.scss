@@ -1,17 +1,21 @@
 .about {
   width: 70%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap;
 
   @media (max-width: 1040px) {
     margin: 2vh auto 8vh;
+    width: 90%;
   }
 
   .about-name {
     width: 100%;
     font-size: xxx-large;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    text-align: center;
 
     @media (max-width: 1040px) {
       display: none;
@@ -24,17 +28,14 @@
     width: 60%;
     height: max-content;
 
-    .about-me {
-      display: none;
-
-      @media (max-width: 1040px) {
-        display: block;
-      }
+    @media (max-width: 1024px) {
+      width: 40%;
+      margin: auto;
     }
 
     h1 {
       font-weight: 800;
-      width: max-content;
+      width: 90%;
       height: max-content;
 
       @media (max-width: 1040px) {
@@ -43,7 +44,7 @@
     }
 
     h2 {
-      width: max-content;
+      width: 100%;
       height: max-content;
 
       @media (max-width: 1040px) {
@@ -57,6 +58,7 @@
       font-weight: 400;
       line-height: 1.2;
       height: max-content;
+      width: 90%;
 
       @media (max-width: 1040px) {
         font-size: x-small;
@@ -69,5 +71,10 @@
     width: 220px;
     border-radius: 5px;
     filter: opacity(0.7);
+
+    @media (max-width: 1024px) {
+      width: 110px;
+      margin: auto;
+    }
   }
 }

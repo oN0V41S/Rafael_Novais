@@ -1,16 +1,4 @@
 .project {
-  
-  .project-title {
-    width: max-content;
-    margin: 5vh auto 15vh;
-    font-size: xx-large;
-    font-weight: 900;
-
-    @media (max-width: 1024px) {
-      font-size: medium;
-      margin: 5vh auto ;
-    }
-  }
 
   .project-list {
     display: grid;

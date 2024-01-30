@@ -13,7 +13,7 @@ import jsIcon from "@/static/skills/javascript.png";
 export default function Skills() {
   return (
     <section className="Skills">
-      <h1 className="project-title">Habilidades</h1>
+      <h1 className="title-page">Habilidades</h1>
       <div className="skill-list">
         <ItemSkill
           Skill="SassCSS"
