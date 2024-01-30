@@ -1,23 +1,14 @@
 .project {
   
   .project-title {
-    width: 70%;
-    margin: 2vh auto 6vh 0;
-    display: grid;
-    line-height: 1.5;
+    width: max-content;
+    margin: 5vh auto 15vh;
+    font-size: xx-large;
+    font-weight: 900;
 
     @media (max-width: 1024px) {
-      display: grid;
-      gap: 15px;
-      width: 80%;
       font-size: medium;
-      margin: 2vh auto 8vh;
-    }
-
-    p {
-      @media (max-width: 1024px) {
-        font-size: small;
-      }
+      margin: 5vh auto ;
     }
   }
 

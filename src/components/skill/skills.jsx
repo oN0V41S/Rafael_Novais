@@ -13,7 +13,7 @@ import jsIcon from "@/static/skills/javascript.png";
 export default function Skills() {
   return (
     <section className="Skills">
-      <SkillTitle/>
+      <h1 className="project-title">Habilidades</h1>
       <div className="skill-list">
         <ItemSkill
           Skill="SassCSS"
@@ -29,6 +29,11 @@ export default function Skills() {
           Skill="ReactJS"
           capacidades="Desenvolvimento de Aplicações com a Biblioteca React e seus principais recursos e outros pacotes."
           src={reactIcon}
+        />
+        <ItemSkill
+          Skill="JavaScript"
+          capacidades="Criação de estilos com a biblioteca do SassCSS que possibilita a utilização de novos recursos para o CSS comum."
+          src={jsIcon}
         />
         <ItemSkill
           Skill="Python"
@@ -57,17 +62,5 @@ export default function Skills() {
         />
       </div>
     </section>
-  );
-}
-
-function SkillTitle() {
-  return (
-    <div className="skills-title">
-      <h1>Habilidades</h1>
-      <p>
-        Essas são algumas habilidades e Tecnologias que tenho conhecimento ou
-        estou estudando no momento.
-      </p>
-    </div>
   );
 }
