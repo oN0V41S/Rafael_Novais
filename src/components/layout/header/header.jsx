@@ -34,6 +34,7 @@ export default function Header() {
         <span /> <span /> <span />
       </button>
       <Modal
+      className="modal"
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Modal De Exemplo"
@@ -43,9 +44,10 @@ export default function Header() {
           },
           content: {
             border: "1px solid black",
-            background: "rgba(0, 0 ,0, 1)",
+            background: "rgba(0, 0 ,0, 0.9)",
             borderRadius: "10px",
             padding: "20px",
+            width: '90%'
           },
         }}
       >

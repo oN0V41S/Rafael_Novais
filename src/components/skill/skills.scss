@@ -1,94 +1,109 @@
-/* Título da Página */
-.skills-title {
-  width: 70%;
-  margin: 2vh auto 8vh 0;
-  display: grid;
-  line-height: 1.5;
-
-  @media (max-width: 1024px) {
-    display: grid;
-    gap: 15px;
-    width: 80%;
-    font-size: medium;
-    margin: 2vh auto 8vh;
-  }
-}
-
-/* Conteiner de Habilidades */
-.skill-list {
-  display: grid;
-  grid-template-columns: 48% 48%;
-  gap: 20px;
-  justify-content: space-around;
-  border-radius: 15px;
+.skills {
   width: 100%;
-  margin: 2vh auto;
+  /* Título da Página */
+  .skills-title {
+    width: 70%;
+    margin: 2vh auto 8vh 0;
+    display: grid;
+    line-height: 1.5;
 
-  @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+      display: grid;
+      gap: 15px;
+      width: 80%;
+      font-size: medium;
+      margin: 2vh auto 8vh;
+    }
+  }
+
+  /* Conteiner de Habilidades */
+  .skill-list {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+    justify-content: space-around;
+    border-radius: 15px;
     width: 100%;
-    grid-template-columns: 100%;
-    gap: 4vh;
-    margin: 8vh 0 0 0;
-    padding: 0;
-  }
-
-  /* Imagem da Habildade */
-  img {
-    width: 28px;
-    height: 28px;
-  }
-
-  h4 {
-    height: max-content;
-    margin-top: auto;
-  }
-}
-// Habilidade
-.skill {
-  background-color: rgba(0, 0, 255, 0.1);
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
-  padding: 4vh 6vh;
-  border-radius: 10px;
-  display: grid;
-  flex-direction: column;
-  gap: 20px;
-  width: 70%;
-  margin: auto;
-
-  &:hover,
-  &:focus {
-    transition: 800ms;
-    box-shadow: 0 0 10px 3px rgba(51, 51, 51, 0.5);
-  }
-
-  @media (max-width: 1024px) {
-    margin: auto;
-  }
-
-  div {
-    display: flex;
-    gap: 5%;
-    align-items: center;
+    margin: 2vh auto;
 
     @media (max-width: 1024px) {
-      width: 90%;
-      margin: 0 auto;
-      gap: 10px;
+      width: 100%;
+      grid-template-columns: 100%;
+      gap: 4vh;
+      margin: 8vh 0 0 0;
+      padding: 0;
     }
-  }
 
-  h4 {
-    margin: auto auto auto 0;
+    // Habilidade
+    .skill {
+      background-color: rgba(0, 0, 255, 0.1);
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+      padding: 4vh 6vh;
+      border-radius: 10px;
+      display: grid;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      margin: auto;
 
-    @media (max-width: 1024px) {
-      font-size: x-small;
-      margin: auto auto auto 0;
-    }
-  }
+      &:hover,
+      &:focus {
+        transition: 800ms;
+        box-shadow: 0 0 10px 3px rgba(51, 51, 51, 0.5);
+      }
 
-  p {
-    @media (max-width: 1024px) {
-      font-size: small;
+      @media (max-width: 1024px) {
+        width: 90%;
+        padding: 3vh 2vh;
+        gap: 5px;
+      }
+
+      div {
+        margin: auto;
+        display: flex;
+        gap: 5%;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+          width: 70%;
+          gap: 10px;
+          margin: 0;
+          margin-right: auto;
+          margin-left: 10px;
+        }
+      }
+
+      h4 {
+        margin: auto auto auto 0;
+
+        @media (max-width: 1024px) {
+
+          font-size: smaller;
+          margin: auto auto auto 0;
+        }
+      }
+
+      p {
+        @media (max-width: 1024px) {
+          width: 90%;
+          font-size: medium;
+          margin: 2vh auto;
+          text-align: justify;
+        }
+      }
+
+      /* Imagem da Habildade */
+      img {
+        width: 28px;
+        @media (max-width: 1024px) {
+          width: 34px;
+        }
+      }
+
+      h4 {
+        height: max-content;
+        margin-top: auto;
+      }
     }
   }
 }

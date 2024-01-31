@@ -1,5 +1,4 @@
 .project {
-
   .project-list {
     display: grid;
     grid-template-columns: 49% 49%;
@@ -19,7 +18,7 @@
       border-radius: 15px;
       background-color: rgba(0, 0, 255, 0.15);
       font-size: medium;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -28,7 +27,8 @@
       height: max-content;
       box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
 
-      @media (max-width: 1024px) {
+      @media (max-width:1024px) {
+        padding: 5vh;
         width: auto;
       }
 

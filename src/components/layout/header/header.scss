@@ -23,40 +23,40 @@
     height: max-content;
     margin: auto 0;
   }
-}
 
-/* Estilo do Botão para abrir o Modal  */
-.modal-btn {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  height: max-content;
-  width: 30px;
-  background: none;
-  border: 0px;
-
-  span {
-    position: absolute;
+  /* Estilo do Botão para abrir o Modal  */
+  .modal-btn {
+    cursor: pointer;
+    position: relative;
     display: block;
-    height: 3px;
-    width: 100%;
-    border-radius: 30px;
-    background-color: white;
-  }
+    height: max-content;
+    width: 30px;
+    background: none;
+    border: 0px;
 
-  &:hover span {
-    transition: 500ms;
-    background-color: rgba(200, 200, 200, 0.9);
-  }
+    span {
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 100%;
+      border-radius: 30px;
+      background-color: white;
+    }
 
-  &:nth-child(1) {
-    top: 5px;
-  }
-  &:nth-child(2) {
-    top: 10px;
-  }
-  &:nth-child(3) {
-    top: 15px;
+    // &:hover span{
+    //   transition: 500ms;
+    //   background-color: rgba(200, 200, 200, 0.9);
+    // }
+
+    :nth-child(1) {
+      top: 5px;
+    }
+    :nth-child(2) {
+      top: 10px;
+    }
+    :nth-child(3) {
+      top: 15px;
+    }
   }
 }
 
@@ -89,6 +89,7 @@
   }
 }
 
+// Estilos do Modal
 .nav-link {
   h4 {
     @media (max-width: 1024px) {
