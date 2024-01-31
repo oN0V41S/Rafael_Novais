@@ -32,7 +32,7 @@ export default function Skills() {
         />
         <ItemSkill
           Skill="JavaScript"
-          capacidades="Criação de estilos com a biblioteca do SassCSS que possibilita a utilização de novos recursos para o CSS comum."
+          capacidades="Conhecimento em programação em js, Estrutura POO, usando biblioteca NodeJS."
           src={jsIcon}
         />
         <ItemSkill
@@ -47,7 +47,7 @@ export default function Skills() {
         />
         <ItemSkill
           Skill="Kotlin ( Estudando )"
-          capacidades="Conhecimento em programação com Kotlin, Estrutura de POO, e biblioteca Spring Boot."
+          capacidades="Conhecimento em programação com Kotlin, Estrutura de POO, bibliotecas Spring Boot."
           src={kotlinIcon}
         />
         <ItemSkill
@@ -57,7 +57,7 @@ export default function Skills() {
         />
         <ItemSkill
           Skill="Linguagens de Marcação"
-          capacidades="Conhecimento em Linguagens de Marcação HTML5, CSS3, e Markdown, desenvolvidos academicamente."
+          capacidades="Conhecimento em Linguagens de Marcação HTML5, CSS3, e Markdown e outros."
           src={limaIcon}
         />
       </div>
