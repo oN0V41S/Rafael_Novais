@@ -10,9 +10,8 @@ export default function Project() {
           img={DevWizard}
           name="DevWizards"
           tech="ReactJS, TailwindCSS, Figma, Trello"
-          desc="Projeto Desenvolvido em uma Squad em Sala de Aula com foco em práticar todo conteúdo estudado no semestre"
+          desc="Projeto Desenvolvido em uma Squad em Sala de Aula com foco em práticar todo conteúdo estudado no semestre do Curso de Desenvolvimento de Sistemas"
         />
-        <ItemProject img="" name="Em breve" tech="Em breve" desc="Em breve" />
       </div>
     </section>
   );

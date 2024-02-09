@@ -1,7 +1,8 @@
 .project {
+  width: 100%;
+
   .project-list {
-    display: grid;
-    grid-template-columns: 49% 49%;
+    display: flex;
     gap: 20px;
     border-radius: 15px;
     width: 100%;
@@ -9,8 +10,8 @@
     position: relative;
 
     @media (max-width: 1024px) {
-      grid-template-columns: 100%;
-      width: 90%;
+      flex-direction: column;
+      width: 100%;
       padding: 0;
       margin: 2vh auto;
     }
@@ -24,16 +25,19 @@
       padding: 5vh 3vh;
       font-weight: 800;
       height: max-content;
-      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+      width: 40%;
 
       @media (max-width:1024px) {
-        padding: 5vh;
-        width: auto;
+        width: 80%;
+        padding: 2vh;
+        margin: auto;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         transition: 800ms;
-        box-shadow: 0px 0px 20px 1px rgba(10, 10, 10, 0.9);
+        box-shadow: 0px 0px 20px 1px rgba(22, 22, 22, 0.9);
       }
 
       .project-img {
@@ -43,11 +47,6 @@
         border-radius: 20px;
       }
 
-      h2 {
-        @media (max-width: 1024px) {
-          font-size: small;
-        }
-      }
       .project-info {
         width: 90%;
         margin: 2vh auto;
@@ -61,6 +60,9 @@
         }
         h2 {
           font-size: medium;
+          @media (max-width: 1024px) {
+            font-size: x-small;
+          }
         }
       }
     }

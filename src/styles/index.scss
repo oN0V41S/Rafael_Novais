@@ -51,7 +51,7 @@ body {
     margin: 4vh auto;
     width: 90%;
     @media (max-width: 1024px) {
-      margin-top: 5vh;
+      margin: 0;
     }
   }
 
@@ -63,7 +63,7 @@ body {
 
     @media (max-width: 1024px) {
       font-size: xx-large;
-      margin: 5vh auto ;
+      margin: 1vh auto 4vh;
     }
   }
 }

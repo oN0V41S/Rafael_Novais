@@ -5,7 +5,31 @@
   justify-content: space-between;
   gap: 20px;
 
+
+  h1 {
+    font-weight: 800;
+    width: 90%;
+    height: max-content;
+
+    @media (max-width: 1040px) {
+      font-size: small;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    height: max-content;
+
+    @media (max-width: 1040px) {
+      width: max-content;
+      font-size: larger;
+      padding: 1vh 1vh;
+    }
+  }
+  
+
   @media (max-width: 1040px) {
+    gap: 0;
     margin: 2vh auto 8vh;
     flex-direction: column;
     width: 90%;
@@ -40,28 +64,11 @@
       margin: auto;
     }
 
-    h1 {
-      font-weight: 800;
-      width: 90%;
-      height: max-content;
+    
 
-      @media (max-width: 1040px) {
-        font-size: small;
-      }
-    }
-
-    h2 {
-      width: 100%;
-      height: max-content;
-
-      @media (max-width: 1040px) {
-        font-size: smaller;
-        padding: 1vh 1vh;
-      }
-    }
 
     p {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 1.2;
       height: max-content;
@@ -76,6 +83,7 @@
 
   .about-picture {
     width: 220px;
+    height: 350px;
     border-radius: 5px;
     filter: opacity(0.7);
 

@@ -1,18 +1,19 @@
 import minhaFoto from "@/static/foto2.jpg";
+import Playlist from "@/components/playlist/playlist";
 
 export default function About() {
   return (
     <section className="about">
       <h1 className="about-name title-page">Rafael Novais</h1>
-      <h2>Desenvolvedor Front-End</h2>
+      <h2>Desenvolvedor FullStack</h2>
       <div className="about-text">
         <p>
-          Meu nome é Rafael tenho 17 anos, sou apaixonado por programação desde
-          os 14 anos, sou Desenvolvedor de Sistemas cursando Desenvolvimento de
+          Meu nome é Rafael, sou apaixonado por programação desde
+          os 14 anos, curso Desenvolvimento de
           Sistemas pela instiução Senai, atualmente tenho conhecimento em
-          Front-End, com foco em ReactJS, mas estou estudando novas habilidades
-          em Back-End para me Tornar um Desenvolvedor FullSatck.
+          Front/Back-End, Banco de Dados, e Teste de Software, estou dedicando meu tempo 100% a estudar novas tecnologias e ferramentas.
         </p>
+        <Playlist/>
       </div>
       <img src={minhaFoto} alt="Minha foto" className="about-picture" />
     </section>

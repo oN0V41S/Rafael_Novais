@@ -1,112 +1,99 @@
 .playlist {
-  margin-top: 10vh;
+  width: 100%;
+  margin: 2vh auto;
 
-  /* Media query para Telas menores que Tablet */
   @media (max-width: 1024px) {
-    margin-top: 5vh;
+    margin: 1vh auto;
   }
-
-  h2 {
-    width: max-content;
-
-    @media (max-width: 1024px) {
-      margin: 0 auto;
-      font-size: small;
-    }
-  }
-
   /* conteiner com as playlists */
   .playlist-list {
-    display: grid;
-    grid-template-columns: 49% 49%;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    gap: 2%;
+    gap: 10px;
     height: auto;
-  }
 
-  .playlist-list {
     /* Media query para Telas menores que Tablet */
     @media (max-width: 1024px) {
       grid-template-columns: 100%;
       justify-content: center;
     }
-  }
-
-  /* Estilo do item */
-  .playlist-item {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 80%;
-    margin: 2vh auto;
-    padding: 4vh 3vh;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    height: auto;
-
-    /* Media query para Telas menores que Tablet */
-    @media (max-width: 1024px) {
-      padding: 2vh;
-    }
-  }
-  /* Estilo barra de progresso  */
-  .playlist-bar {
-    width: 0%;
-    background-color: white;
-    border-radius: 5px;
-    height: 5px;
-    margin: 0 auto 2vh;
-
-    /* Media query para Telas menores que Tablet */
-    @media (max-width: 1024px) {
-      height: 2px;
-    }
-  }
-
-  /* Animação barra de progresso */
-  .playlist-item:hover .playlist-bar {
-    transition: 1s ease-in-out;
-    width: 90%;
-  }
-
-  .playlist-title {
-    display: flex;
-    height: auto;
-    width: 100%;
-    gap: 2.5%;
-  }
-
-  .playlist-title img {
-    width: 36px;
-    height: 36px;
-
-    /* Media query para Telas menores que Tablet */
-    @media (max-width: 1024px) {
-      width: 19px;
-      height: 19px;
-    }
-  }
-  .playlist-title h3 {
-    height: max-content;
-    margin-top: auto;
-
-    /* Media query para Telas menores que Tablet */
-    @media (max-width: 1024px) {
-      font-size: small;
-      width: 100%;
-    }
-  }
-  .playlist-item h5 {
-    width: 100%;
-    margin-top: 2vh;
-
-    /* Media query para Telas menores que Tablet */
-    @media (max-width: 1024px) {
-      font-size: xx-small;
-      width: 100%;
+    /* Estilo do item */
+    .playlist-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 18px 40px;
+      text-decoration: none;
+      height: 100%;
+      width: 75%;
+  
+      @media (max-width: 1024px) {
+        padding: 2vh;
+        margin: auto;
+      }
+  
+      /* Animação barra de progresso */
+      &:hover .playlist-bar {
+        transition: 1s ease-in-out;
+        width: 90%;
+      }
+      /* Estilo barra de progresso  */
+      .playlist-bar {
+        width: 0%;
+        background-color: white;
+        border-radius: 5px;
+        height: 5px;
+        margin: 0 auto 2vh;
+  
+        /* Media query para Telas menores que Tablet */
+        @media (max-width: 1024px) {
+          margin-bottom: 1vh;
+          height: 2px;
+        }
+      }
+      .playlist-title {
+        display: flex;
+        height: auto;
+        width: 100%;
+        gap: 2.5%;
+      }
+  
+      img {
+        width: 36px;
+        height: 36px;
+  
+        /* Media query para Telas menores que Tablet */
+        @media (max-width: 1024px) {
+          width: 19px;
+          height: 19px;
+        }
+      }
+  
+      h3 {
+        height: max-content;
+        margin-top: auto;
+  
+        /* Media query para Telas menores que Tablet */
+        @media (max-width: 1024px) {
+          font-size: small;
+          width: 100%;
+        }
+      }
+  
+      h5 {
+        width: 100%;
+        margin-top: 2vh;
+  
+        /* Media query para Telas menores que Tablet */
+        @media (max-width: 1024px) {
+          font-size: xx-small;
+          width: 100%;
+          margin-top: 1vh;
+        }
+      }
     }
   }
 }
-
-

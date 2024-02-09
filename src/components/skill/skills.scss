@@ -30,7 +30,7 @@
       width: 100%;
       grid-template-columns: 100%;
       gap: 4vh;
-      margin: 8vh 0 0 0;
+      margin: 3vh 0;
       padding: 0;
     }
 
@@ -53,8 +53,8 @@
       }
 
       @media (max-width: 1024px) {
-        width: 90%;
-        padding: 3vh 2vh;
+        width: 75%;
+        padding: 2vh 3vh;
         gap: 5px;
       }
 
@@ -64,19 +64,16 @@
         align-items: center;
 
         @media (max-width: 1024px) {
-          width: 70%;
           gap: 10px;
           margin: 0;
-          margin-right: auto;
-          margin-left: 10px;
         }
       }
 
       h4 {
-        margin: auto auto auto 0;
+        width: max-content;
+        height: max-content;
 
         @media (max-width: 1024px) {
-
           font-size: smaller;
           margin: auto auto auto 0;
         }
@@ -85,8 +82,7 @@
       p {
         @media (max-width: 1024px) {
           width: 90%;
-          font-size: medium;
-          margin: 2vh auto;
+          font-size: x-small;
           text-align: justify;
         }
       }
@@ -97,11 +93,6 @@
         @media (max-width: 1024px) {
           width: 34px;
         }
-      }
-
-      h4 {
-        height: max-content;
-        margin-top: auto;
       }
     }
   }
