@@ -3,7 +3,7 @@ export default function ItemSkill({ Skill, src, capacidades }) {
     <div className="skill">
       <div>
         <img alt="skillImg" src={src} />
-        <h4>{Skill}</h4>
+        <h1>{Skill}</h1>
       </div>
       <p>{capacidades}</p>
     </div>
