@@ -83,9 +83,9 @@ export default function Skills() {
             capacidades="Capacidades de criar imagens e conteiners do docker, e instância-lós."
           />
           <ItemSkill
-            src={"https://w7.pngwing.com/pngs/28/245/png-transparent-postman-hd-logo.png"}
-            Skill="Docker"
-            capacidades="Capacidades de criar imagens e conteiners do docker, e instância-lós."
+            src={"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png"}
+            Skill="Postman"
+            capacidades="Testes de solicitações HTTP e outros recursos da ferramenta."
           />
           
         </SkillArea>
