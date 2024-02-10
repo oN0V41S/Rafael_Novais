@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/layout";
-import Skills from "../components/skill/skills";
+import Skills from "@/components/tools/skills";
 
 export default function Tools() {
   return (

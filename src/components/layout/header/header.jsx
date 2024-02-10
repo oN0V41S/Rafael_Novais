@@ -4,9 +4,9 @@ import React from "react";
 // Importando components
 import { Link } from "react-router-dom";
 import Modal from "react-modal";
-import Contact from "@/components/layout/aside/contact";
-import Navigation from "@/components/layout/aside/navigation";
-import TopSKill from "@/components/layout/aside/topSkill";
+import Contact from "@/components/layout/aside/aside";
+import Navigation from "@/components/layout/aside/aside";
+import TopSKill from "@/components/layout/aside/aside";
 
 // Recursos de acessibilidade do Modal
 Modal.setAppElement("#root");

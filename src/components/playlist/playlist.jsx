@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+
 import toolsIcon from "@/static/icons/tools.png"
 import projectIcon from "@/static/icons/project.png"
-import ItemPlaylist from "@/components/playlist/ItemPlaylists";
 
 export default function Playlist() {
   return (
@@ -10,15 +11,27 @@ export default function Playlist() {
           src={toolsIcon}
           href="/skills"
           name="Tecnologias e Ferramentas"
-          desc="Algumas das tecnologias e ferramentas que possuo conhecimento ou estou estudando."
         />
         <ItemPlaylist
           src={projectIcon}
           href="/projects"
           name="Projetos"
-          desc="Alguns dos Projetos que desenvolvi ou participei."
         />
       </div>
     </section>
   );
 }
+
+
+function ItemPlaylist({ src, name, desc, href }) {
+  return (
+    <Link to={href} className="playlist-item">
+        <span className="playlist-bar" />
+      <div className="playlist-title">
+        <img src={src} alt="" />
+        <h3>{name}</h3>
+      </div>
+    </Link>
+  );
+}
+

@@ -20,66 +20,56 @@
   @media (max-width: 1024px) {
     display: none;
   }
-}
 
-/* Componentes do aside */
-.aside-component {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-  color: white;
-  display: grid;
-  width: 75%;
-  border-radius: 15px;
-  padding: 2.2vh 3vh;
-  margin: 0 auto;
-  width: 80%;
-
-@media (max-width:1024px) {
-    margin: 2vh auto;
-}
-
-  a {
-    text-decoration: none;
-  }
-  h3 {
-    margin: 1.2vh 0;
-    width: max-content;
-    margin-left: 1vh;
-    pointer-events: none;
-  }
-}
-
-/* listas do componente */
-.aside-list {
-  list-style-type: none;
-  display: grid;
-  gap: 10px;
-  margin-right: auto;
-  width: 100%;
-
-  /* Itens do componente */
-  .aside-item {
+  .aside-component {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
     color: white;
-    display: flex;
-    gap: 15px;
-    padding: 1.5vh;
-    align-items: center;
-    margin-right: auto;
+    display: grid;
+    width: 75%;
+    border-radius: 15px;
+    padding: 2.2vh 3vh;
+    margin: 0 auto;
+    width: 80%;
 
-    h4 {
-      font-size: medium;
+    @media (max-width: 1024px) {
+      margin: 2vh auto;
     }
-    /* Imagem do componente */
-    .aside-img {
-      width: 22px;
+
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      margin: 1.2vh 0;
+      width: max-content;
+      margin-left: 1vh;
+      pointer-events: none;
     }
   }
-}
 
-// Conteiner de Contatos 
-.contact-list {
-  margin-right: auto;
-  li {
-    font-size: smaller;
+  .aside-list {
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    margin-right: auto;
+    width: 100%;
+
+    /* Itens do componente */
+    .aside-item {
+      color: white;
+      display: flex;
+      gap: 15px;
+      padding: 1.5vh;
+      align-items: center;
+      margin-right: auto;
+
+      h1 {
+        font-size: medium;
+      }
+      /* Imagem do componente */
+      .aside-img {
+        width: 22px;
+      }
+    }
   }
 }
