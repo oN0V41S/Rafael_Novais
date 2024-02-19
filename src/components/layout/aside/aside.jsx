@@ -51,7 +51,7 @@ function Navigation() {
 function TopSkill() {
   return (
     <div id="topSkill" className="aside-component">
-      <h3>Top Habilidades</h3>
+      <h3>Habilidades</h3>
       <Link to="/skills">
         <ul className="aside-list">
           <li>
