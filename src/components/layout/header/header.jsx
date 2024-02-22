@@ -1,7 +1,4 @@
-// Importando react
 import React from "react";
-
-// Importando components
 import { Link } from "react-router-dom";
 
 import homeIcon from "@/static/icons/home.png";

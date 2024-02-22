@@ -8,14 +8,14 @@ export default function Playlist() {
     <section>
       <div className="playlist-list">
         <ItemPlaylist
-          src={toolsIcon}
-          href="/skills"
           name="Habilidades"
+          href="/skills"
+          src={toolsIcon}
         />
         <ItemPlaylist
-          src={projectIcon}
-          href="/projects"
           name="Projetos"
+          href="/projects"
+          src={projectIcon}
         />
       </div>
     </section>
@@ -23,8 +23,7 @@ export default function Playlist() {
 }
 
 
-function ItemPlaylist({ src, name, desc, href }) {
-  return (
+const ItemPlaylist = ({ src, name, href }) => (
     <Link to={href} className="playlist-item">
         <span className="playlist-bar" />
       <div className="playlist-title">
@@ -32,6 +31,4 @@ function ItemPlaylist({ src, name, desc, href }) {
         <h3>{name}</h3>
       </div>
     </Link>
-  );
-}
-
+);
