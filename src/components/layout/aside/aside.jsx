@@ -18,6 +18,15 @@ export default function LayoutAside() {
   );
 }
 
+function AsideItem({ src, name }) {
+  return (
+    <div className="aside-item">
+      <img className="aside-img" src={src} alt="aboutImg" />
+      <h1>{name}</h1>
+    </div>
+  );
+}
+
 function AsideLink({ src, name, href }) {
   return (
     <a className="aside-item" href={href}>
@@ -55,19 +64,19 @@ function TopSkill() {
       <Link to="/skills">
         <ul className="aside-list">
           <li>
-            <AsideLink
+            <AsideItem
               src={"https://img.icons8.com/ultraviolet/40/react--v1.png"}
               name="React.JS"
             />
           </li>
           <li>
-            <AsideLink
+            <AsideItem
               src={"https://img.icons8.com/color/48/javascript.png"}
               name="JavaScript"
             />
           </li>
           <li>
-            <AsideLink
+            <AsideItem
               src={
                 "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
               }

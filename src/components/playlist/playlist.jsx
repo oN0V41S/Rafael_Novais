@@ -5,12 +5,12 @@ import projectIcon from "@/static/icons/project.png"
 
 export default function Playlist() {
   return (
-    <section className="playlist">
+    <section>
       <div className="playlist-list">
         <ItemPlaylist
           src={toolsIcon}
           href="/skills"
-          name="Tecnologias e Ferramentas"
+          name="Habilidades"
         />
         <ItemPlaylist
           src={projectIcon}

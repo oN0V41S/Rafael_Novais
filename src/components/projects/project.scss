@@ -1,89 +1,92 @@
-.project {
+.project-list {
+  display: flex;
+  gap: 20px;
+  border-radius: 15px;
   width: 100%;
+  margin: auto;
+  position: relative;
 
-  .project-list {
-    display: flex;
-    gap: 20px;
+  a {
+    color: white;
+    text-decoration: 0px solid rgba(255, 255, 255, 0);
+    outline: 0;
+  }
+
+  .project-item {
     border-radius: 15px;
-    width: 100%;
-    margin: auto;
+    background-color: rgba(209, 209, 209, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 3vh;
+    height: max-content;
+    box-shadow: 0px 0px 20px rgba(255, 248, 220, 0.219);
+    width: 50%;
     position: relative;
+    transition: all 800ms;
 
-    @media (max-width: 1024px) {
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
-      margin: 2vh auto;
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 20px rgba(255, 248, 220, 0.219);
     }
 
-    a {
-      color: white;
-      text-decoration: 0px solid rgba(255, 255, 255, 0);
-      outline: 0;
-    }
-
-    .project-item {
+    img {
+      background-color: rgb(0, 0, 0);
       border-radius: 15px;
-      background-color: rgba(209, 209, 209, 0.1);
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      padding: 3vh;
+      width: 18%;
+      margin-top: auto;
+    }
+
+    h1 {
+      font-size: x-large;
+      font-weight: bolder;
+      width: max-content;
       height: max-content;
-      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
-      width: 50%;
-      position: relative;
+    }
 
-      &:hover,
-      &:focus {
-        transition: 800ms;
-        box-shadow: 0px 0px 20px 1px rgba(22, 22, 22, 0.9);
-      }
+    div {
+      font-size: x-small;
+      width: 100%;
+      display: grid;
+      gap: 10px;
+      font-weight: 100;
 
-      @media (max-width: 1024px) {
-        width: 80%;
-        padding: 2vh;
-        margin: auto;
-      }
-
-      img {
-        background-color: rgb(0, 0, 0);
-        border-radius: 15px;
-        width: 18%;
-        margin-top: auto;
-      }
-
-      h1 {
-        font-size: x-large;
-        font-weight: bolder;
-        width: max-content;
-        height: max-content;
-      }
-
-      div {
-        font-size: x-small;
+      h2,
+      p {
+        font-size: medium;
         width: 100%;
-        display: grid;
-        gap: 10px;
-        font-weight: 100;
 
-        h2,
-        p {
-          font-size: medium;
-          width: 100%;
-
-          @media (max-width: 1024px) {
-            font-size: x-small;
-          }
+        @media (max-width: 1024px) {
         }
       }
+    }
 
-      h3 {
-        font-size: medium;
-        margin-top: 1vh;
-        width: max-content;
-        margin: auto;
+    h3 {
+      font-size: medium;
+      margin-top: 1vh;
+      width: max-content;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 2vh auto;
+
+    .project-item{
+      gap: 10px;
+      margin: auto;
+      padding: 2vh;
+      width: 80%;
+
+      div{
+        p{
+          font-size: x-small;
+        }
       }
     }
   }

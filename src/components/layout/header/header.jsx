@@ -3,63 +3,16 @@ import React from "react";
 
 // Importando components
 import { Link } from "react-router-dom";
-import Modal from "react-modal";
-import Contact from "@/components/layout/aside/aside";
-import Navigation from "@/components/layout/aside/aside";
-import TopSKill from "@/components/layout/aside/aside";
 
-// Recursos de acessibilidade do Modal
-Modal.setAppElement("#root");
+import homeIcon from "@/static/icons/home.png";
 
 export default function Header() {
-  // Hook que demonstra se a modal está aberta ou não
-  let [modalIsOpen, setIsOpen] = React.useState(false);
-
-  // Função que abre o modal
-  function openModal() {
-    setIsOpen(true);
-  }
-  // Função que fechar o modal
-  function closeModal() {
-    setIsOpen(false);
-  }
-
   return (
     <header className="header">
+      <h3>Rafael Novais</h3>
       <Link to="/">
-        <h3>RafaelNovais</h3>
+        <img src={homeIcon} alt="" />
       </Link>
-
-      <button onClick={openModal} className="modal-btn">
-        <span /> <span /> <span />
-      </button>
-      <Modal
-      className="modal"
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Modal De Exemplo"
-        style={{
-          overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-          },
-          content: {
-            border: "1px solid black",
-            background: "rgba(0, 0 ,0, 0.9)",
-            borderRadius: "10px",
-            padding: "20px",
-            width: '90%'
-          },
-        }}
-      >
-        <button onClick={closeModal} className="modal-btn-close">
-          <span/> <span/>
-        </button>
-        <div>
-          <Navigation />
-          <TopSKill />
-          <Contact />
-        </div>
-      </Modal>
     </header>
   );
 }

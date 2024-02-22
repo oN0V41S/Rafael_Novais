@@ -1,16 +1,11 @@
 /* conteiner com as playlists */
 .playlist-list {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
+  width: 80%;
   height: auto;
+  justify-content: space-between;
+  margin: 0 auto;
 
-  /* Media query para Telas menores que Tablet */
-  @media (max-width: 1024px) {
-    grid-template-columns: 100%;
-    justify-content: center;
-  }
   /* Estilo do item */
   .playlist-item {
     background-color: rgba(255, 255, 255, 0.1);
@@ -19,53 +14,64 @@
     display: flex;
     flex-direction: column;
     padding: 10px 25px;
+    padding-bottom: 15px;
     text-decoration: none;
-    height: 100%;
-    width: 80%;
-
-    @media (max-width: 1024px) {
-      padding: 2vh;
-      margin: 0 auto;
-    }
+    width: 200px;
 
     /* Animação barra de progresso */
     &:hover .playlist-bar {
-      transition: 1s ease-in-out;
-      width: 100%;
+      width: 95%;
     }
     /* Estilo barra de progresso  */
     .playlist-bar {
+      display: block;
       width: 0%;
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.5);
       border-radius: 5px;
       height: 3px;
-      margin: 0 auto 1vh;
-
-      /* Media query para Telas menores que Tablet */
-      @media (max-width: 1024px) {
-        margin: 0 0 1vh;
-        height: 2px;
-      }
+      margin: 0.5vh auto 1vh;
+      transition: all 500ms ease-in-out;
     }
+    // Título da playlist
     .playlist-title {
       display: flex;
       height: auto;
-      width: 100%;
-      gap: 15px;
+      width: max-content;
+      gap: 20px;
 
       img {
-        width: 18px;
-        @media (max-width: 1024px) {
-          width: 14px;
-        }
+        width: 22px;
+        height: 22px;
       }
 
       h3 {
+        font-size: medium;
         height: max-content;
         margin-top: auto;
+      }
+    }
+  }
 
-        /* Media query para Telas menores que Tablet */
-        @media (max-width: 1024px) {
+  /* Media query para Telas menores que Tablet */
+  @media (max-width: 800px) {
+    margin-top: 4vh;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    .playlist-item {
+      padding: 10px 25px;
+      padding-bottom: 15px;
+      margin: 0 auto;
+      width: 80%;
+
+      .playlist-title {
+        img {
+          width: 14px;
+          height: 14px;
+        }
+
+        h3 {
           font-size: small;
           width: 100%;
         }

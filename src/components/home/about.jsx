@@ -1,4 +1,3 @@
-import minhaFoto from "@/static/foto2.jpg";
 import Playlist from "@/components/playlist/playlist";
 
 export default function About() {
@@ -13,9 +12,8 @@ export default function About() {
           Sistemas pela instiução Senai, atualmente tenho conhecimento em
           Front/Back-End, Banco de Dados, e Teste de Software, estou dedicando meu tempo 100% a estudar novas tecnologias e ferramentas.
         </p>
-        <Playlist/>
       </div>
-      <img src={minhaFoto} alt="Minha foto" className="about-picture" />
+      <Playlist/>
     </section>
   );
 }
