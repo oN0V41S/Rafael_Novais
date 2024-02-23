@@ -145,6 +145,11 @@
             font-size: x-small;
             font-weight: 200;
           }
+
+          ul{
+            display: flex;
+            flex-direction: column;
+          }
         }
       }
     }

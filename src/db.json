@@ -3,34 +3,41 @@
     "frontEnd": [
       {
         "title": "Next",
-        "desc": "Desenvolvimento de Aplicações com a Biblioteca Next utilizando os principais recursos da biblioteca e outros pacotes.",
+        "desc": "Desenvolvimento de Aplicações WEB com a Biblioteca Next.",
         "img": "https://img.icons8.com/color/48/nextjs.png"
       },
       {
         "title": "React",
-        "desc": "Familiaridade com a biblioteca criando aplicações com NodeJS, React-Hooks, react-router e outras bibliotecas utilizadas.",
+        "desc": "Desenvolvimento de Aplicações WEB com a Biblioteca React.",
         "img": "https://img.icons8.com/ultraviolet/40/react--v1.png"
       },
       {
         "title": "SassCSS",
-        "desc": "Criação de estilos com a biblioteca do SassCSS que possibilita a utilização de novos recursos para o CSS comum.",
+        "desc": "Criação de estilos com a biblioteca do SassCSS.",
         "img": "https://img.icons8.com/color/48/sass.png"
       },
       {
         "title": "LIMA",
-        "desc": "Conhecimento em Linguagens de Marcação HTML5, CSS3, e Markdown e outros.",
+        "desc": "Conhecimento em Linguagens de Marcação HTML5, CSS3, Markdown e outros.",
         "img": "https://img.icons8.com/glyph-neue/64/source-code.png"
       }
     ],
     "backEnd": [
       {
         "title": "Flask",
-        "desc": "Criação de APIRest.",
+        "desc": "Criação de aplicações em Python com a biblioteca",
+        "tecnologias": [
+          {"desc": "Criação de API"}
+        ],
         "img": "https://img.icons8.com/ios/50/flask.png"
       },
       {
         "title": "Spring",
-        "desc": "Spring Boot, Spring initilzr, API Rest, JPAs.",
+        "desc": "Criação de aplicações em Java/Kotlin com a biblioteca",
+        "tecnologias": [
+          {"desc": "Spring initlzr"},
+          {"desc": "Spring JPA"}
+        ],
         "img": "https://img.icons8.com/color/48/spring-logo.png"
       },
       {
