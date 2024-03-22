@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@/styles/style.scss'
-import Home from '@/pages/Home';
-import Projects from '@/pages/Projects'
-import Tools from '@/pages/tools'
+import './styles/style.scss'
+import Home from './pages/Home';
+import Projects from './pages/Projects'
+import Tools from './pages/tools'
 
 import {
   createBrowserRouter,
