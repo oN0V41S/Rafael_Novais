@@ -2,6 +2,16 @@
   "skills": {
     "frontEnd": [
       {
+        "title": "Vue.Js",
+        "desc": "Criacão de aplicações responsivas e performaticas utilizando a componentização do Vue.",
+        "img": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-color-tal-revivo.png"
+      },
+      {
+        "title": "Angular",
+        "desc": "Desenvolvimento de Aplicações utilizando a framework Angular.",
+        "img": "https://img.icons8.com/fluency/48/angularjs.png"
+      },
+      {
         "title": "Next",
         "desc": "Desenvolvimento de Aplicações WEB com a Biblioteca Next.",
         "img": "https://img.icons8.com/color/48/nextjs.png"
@@ -23,6 +33,12 @@
       }
     ],
     "backEnd": [
+      {
+        "title": "NestJS",
+        "desc": "Framework Node.js robusta e escalável inspirada no Angular. Proficiente na criação de APIs RESTful e GraphQL eficientes, utilizando injeção de dependência, modulação clara e integração com bancos de dados relacionais e não relacionais. Experiência prática em desenvolvimento baseado em microserviços, testes unitários e integração contínua, garantindo soluções modernas, performáticas e fáceis de manter.",
+        "img": 
+        
+      },
       {
         "title": "Flask",
         "desc": "Criação de aplicações em Python com a biblioteca",
