@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <>
       <LayoutAside />
       <Header />
-      <main>{children}</main>
+      <main className="">{children}</main>
     </>
   );
 }

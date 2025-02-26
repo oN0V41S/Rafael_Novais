@@ -1,12 +1,12 @@
 /* Conteiner de Habilidades */
 .skill-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: space-around;
   border-radius: 15px;
   width: 100%;
   margin: 2vh auto;
+  flex-direction: column;
 
   h2 {
     font-size: xx-large;

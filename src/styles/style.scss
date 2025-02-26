@@ -1,15 +1,11 @@
 // Importando estilos globais
 @import url("@/styles/index.scss");
 
-/* Importando estilos Página Home */
-@import url("@/components/home/about.scss");
-@import url("@/components/home/playlist.scss");
-
-/* Importando estilos Página Habilidades */
-@import url("@/components/tools/skills.scss");
-
-/* Importando estilos página projetos */
-@import url("@/components/projects/project.scss");
+/* Importando estilos */
+@import url("./home/about.scss");
+@import url("./home/playlist.scss");
+@import url("./skills.scss");
+@import url("./project.scss");
 
 /* Importando estilos de layout da página */
 @import url("@/components/layout/aside/aside.scss");

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '@/styles/style.scss'
-import Home from '@/pages/Home';
-import Projects from '@/pages/Projects'
+import Home from '@/pages/home';
+import Projects from '@/pages/projects'
 import Tools from '@/pages/tools'
 
 import {

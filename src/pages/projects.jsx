@@ -1,10 +1,11 @@
 import Layout from "@/components/layout/layout";
+import db from "@/db.json"
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   const projectsList = db.projects;
    return (
     <Layout>
-      <main>
         <h1 className="title-page">Projetos</h1>
         <ul className="project-list">
           {projectsList.map((projectItem) => (
@@ -16,7 +17,6 @@ export default function Projects() {
             />
           ))}
         </ul>
-      </main>
     </Layout>
     );
   }
