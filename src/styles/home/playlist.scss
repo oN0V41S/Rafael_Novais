@@ -1,10 +1,11 @@
 /* conteiner com as playlists */
 .playlist-list {
   display: flex;
-  width: 80%;
+  width: max-content;
   height: auto;
   justify-content: space-between;
   margin: 0 auto;
+  gap: 2vw;
 
   /* Estilo do item */
   .playlist-item {

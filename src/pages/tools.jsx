@@ -12,15 +12,7 @@ export default function Tools() {
     <Layout>
         <h1 className="title-page">Habilidades</h1>
         <div className="skill-container">
-          <SkillArea id="FrontEnd" title="Front-End">
-            {frontEndList.map((frontEndItem) => (
-              <ItemSkill
-                key={frontEndItem.title}
-                title={frontEndItem.title}
-                desc={frontEndItem.desc}
-                img={frontEndItem.img}
-              />
-            ))}
+          <SkillArea id="FrontEnd" title="Front-End" data={skillsList.frontEnd}>
           </SkillArea>
           <SkillArea id="BackEnd" title="Back-End">
             {backEndList.map((backEndItem) => (
@@ -68,9 +60,21 @@ const ItemSkill = ({ title, img, desc, children }) => {
   </li>
 };
 
-const SkillArea = ({ title, children }) => (
-  <div className="skill-area">
-    <h2>{title}</h2>
-    <ul className="skill-list">{children}</ul>
-  </div>
-);
+const SkillArea = ({ title, children, data }) => {
+  return (
+    <div className="skill-area">
+      <h2>{title}</h2>
+      <ul className="skill-list">
+        {data.map((item) => (
+          <ItemSkill
+            key={item.title}
+            title={item.title}
+            desc={item.desc}
+            img={item.img}
+            />
+        ))}        
+        {children}
+        </ul>
+    </div>
+  )
+};

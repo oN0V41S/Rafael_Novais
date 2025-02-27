@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import homeIcon from "@/static/icons/home.png";
 import toolsIcon from "@/static/icons/tools.png";
 import projectsIcon from "@/static/icons/project.png";
@@ -9,7 +9,7 @@ import emailIcon from "@/static/icons/social/email.png";
 export default function LayoutAside() {
   const AsideItem = ({ src, name, href }) => (
     <li>
-    <Link className="aside-item" to={href}>
+    <Link className="aside-item" href={href}>
       <img className="aside-img" src={src} alt="aboutImg" />
       <h1>{name}</h1>
     </Link>
