@@ -1,12 +1,11 @@
 import Layout from "@/components/layout/layout";
-import db from "@/db.json";
 
 export default function Tools() {
-  const skillsList = db.skills;
-  const frontEndList = skillsList.frontEnd;
-  const backEndList = skillsList.backEnd;
-  const linguagensList = skillsList.linguagens;
-  const devOpsList = skillsList.devOps;
+  // const skillsList = db.skills;
+  // const frontEndList = skillsList.frontEnd;
+  // const backEndList = skillsList.backEnd;
+  // const linguagensList = skillsList.linguagens;
+  // const devOpsList = skillsList.devOps;
 
   return (
     <Layout>
